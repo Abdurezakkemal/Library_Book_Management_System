@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "title": "Derto gada",
+    "author": "Yismake Worku",
+    "category": "Fiction",
+    "quantity": 5
+  },
+  {
+    "id": "2",
+    "title": "Kebur Dingay",
+    "author": "Yismake Worku",
+    "category": "Fiction",
+    "quantity": 3
+  },
+  {
+    "id": "3",
+    "title": "Sememen",
+    "author": "Sisay Nigusu",
+    "category": "Fiction",
+    "quantity": 4
+  },
+  {
+    "id": "4",
+    "title": "Atomic Habit",
+    "author": "James Clear",
+    "category": "self building ",
+    "quantity": 7
+  },
+  {
+    "id": "5",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "quantity": 2
+  }
+]

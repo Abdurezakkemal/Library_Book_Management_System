@@ -1,0 +1,418 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #0d0d0d;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+}
+
+.nav-menu a.active {
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Page header */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.btn-primary:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-danger {
+    background-color: #ff4444;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #cc0000;
+}
+
+.btn-edit {
+    background-color: #666666;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #555555;
+}
+
+/* Books grid */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid #333333;
+}
+
+.book-card:hover {
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    border-color: #555555;
+}
+
+.book-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.book-card p {
+    margin: 8px 0;
+    color: #cccccc;
+}
+
+.book-card .book-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.book-card .book-actions button {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    border: 1px solid #444444;
+}
+
+.modal-content h2 {
+    color: #ffffff;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #ffffff;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #444444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #666666;
+}
+
+/* Features page */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid #333333;
+}
+
+.feature-card:hover {
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    border-color: #555555;
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* About page */
+.about-content {
+    background-color: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid #333333;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.about-list {
+    list-style-position: inside;
+    color: #cccccc;
+    line-height: 2;
+}
+
+/* Contact page */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid #333333;
+}
+
+.info-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #cccccc;
+}
+
+.contact-form-section {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid #333333;
+}
+
+.contact-form-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-message {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #2d5016;
+    color: #90ee90;
+    border-radius: 5px;
+}
+
+/* Responsive Design - Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        padding: 25px;
+    }
+
+    .modal-content {
+        margin: 100px auto;
+        width: 95%;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}

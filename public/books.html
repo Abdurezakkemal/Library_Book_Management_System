@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List - Library Management</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">📚 Library System</div>
+            <ul class="nav-menu">
+                <li><a href="/books" class="active">Books</a></li>
+                <li><a href="/features">Features</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Book Management</h1>
+            <button class="btn btn-primary" onclick="openAddModal()">+ Add New Book</button>
+        </section>
+
+        <section class="books-grid" id="booksGrid">
+            <!-- Books will be loaded here -->
+        </section>
+    </main>
+
+    <!-- Add/Edit Modal -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Add New Book</h2>
+            <form id="bookForm">
+                <input type="hidden" id="bookId">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label>Author</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <input type="text" id="category" required>
+                </div>
+                <div class="form-group">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity" min="0" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/books.js"></script>
+</body>
+</html>
